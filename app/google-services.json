@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "264616876901",
+    "firebase_url": "https://raccolta-libri-2b572.firebaseio.com",
+    "project_id": "raccolta-libri-2b572",
+    "storage_bucket": "raccolta-libri-2b572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264616876901:android:f5003f6cf3db810e781f8c",
+        "android_client_info": {
+          "package_name": "com.example.booksh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264616876901-arh38eto9tt4jnoqh50evo9hnjfm2sid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.booksh",
+            "certificate_hash": "c40f91724d75a8c6d4e3d5ab90e9d18be6ea703c"
+          }
+        },
+        {
+          "client_id": "264616876901-k0eaq20q1kstb1ef135ssi67874lhloq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6yawx3hBbPwuqRmzAiDPIMlQozNtKa1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264616876901-k0eaq20q1kstb1ef135ssi67874lhloq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

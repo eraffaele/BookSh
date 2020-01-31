@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BookSh</string>
+    <string name="author_added">Autore aggiunto!</string>
+    <string name="error_author_required">Inserire il nome!</string>
+    <string name="error_db">Errore inserimento autore!</string>
+</resources>
