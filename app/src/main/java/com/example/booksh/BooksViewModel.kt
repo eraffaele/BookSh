@@ -5,16 +5,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.database.FirebaseDatabase
 
-class AuthorsViewModel : ViewModel() {
+class BooksViewModel : ViewModel() {
 
     private val _result = MutableLiveData<Exception?>()
     val result: LiveData<Exception?>
         get() = _result
 
-    fun addAuthor(author: Author) {
-        val dbAuthors = FirebaseDatabase.getInstance().getReference(NODE_AUTHORS)
-        author.id = dbAuthors.push().key
-        dbAuthors.child(author.id!!).setValue(author)
+    fun addBook(book: Book) {
+        val dbBooks = FirebaseDatabase.getInstance().getReference(NODE_AUTHORS)     //creo riferimento al db
+        book.id = dbBooks.push().key                    //con push genero la chiave (=id), con key posso recuperarla
+        dbBooks.child(book.id!!).setValue(book)         //setto i valori
             .addOnCompleteListener {
                 if (it.isSuccessful) {
                     _result.value = null

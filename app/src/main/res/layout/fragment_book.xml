@@ -4,13 +4,13 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".AuthorsFragment">
+             tools:context=".BooksFragment">
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_authors"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/recycler_view_author" />
+            tools:listitem="@layout/recycler_view_book" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/button_add"

@@ -1,3 +1,3 @@
 package com.example.booksh
 
-const val NODE_AUTHORS = "authors"
+const val NODE_AUTHORS = "libri"

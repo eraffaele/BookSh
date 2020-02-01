@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">BookSh</string>
-    <string name="author_added">Autore aggiunto!</string>
-    <string name="error_author_required">Inserire il nome!</string>
-    <string name="error_db">Errore inserimento autore!</string>
+    <string name="book_added">Libro aggiunto!</string>
+    <string name="error_author_required">Inserire il nome dell autore del libro!</string>
+    <string name="error_title_required">Inserire il nome titolo del libro!</string>
+    <string name="error_description_required">Inserire la descrizione del libro!</string>
+    <string name="error_owner_required">Inserire i riferimenti del proprietario del libro!</string>
+    <string name="error_db">Errore nell inserimento del libro nel database!</string>
 </resources>

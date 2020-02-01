@@ -3,12 +3,12 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/activity_main_nav"
-            app:startDestination="@id/authorsFragment">
+            app:startDestination="@id/booksFragment">
 
     <fragment
-            android:id="@+id/authorsFragment"
-            android:name="com.example.booksh.AuthorsFragment"
-            tools:layout="@layout/fragment_authors"
-            android:label="Authors" />
+            android:id="@+id/booksFragment"
+            android:name="com.example.booksh.BooksFragment"
+            tools:layout="@layout/fragment_book"
+            android:label="Books" />
 
 </navigation>
