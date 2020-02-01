@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.add_book_dialog_fragment.*
 
 class AddBookDialogFragment : DialogFragment() {
-
+    
     private lateinit var viewModel: BooksViewModel
 
     override fun onCreateView(
