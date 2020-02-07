@@ -7,6 +7,5 @@ data class Book(
     var id: String? = null,
     var name: String? = null,
     var title: String? = null,
-    var description: String? = null,
-    var owner: String? = null
+    var date: String? = null
 )

@@ -48,34 +48,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_layout_name_desc"
+            android:id="@+id/input_layout_name_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_name_desc"
+                android:id="@+id/edit_text_name_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Descrizione" />
+                android:hint="Data in cui il libro è stato letto" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_layout_name_owner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_name_owner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Riferimento proprietrio" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
             android:id="@+id/button_add"

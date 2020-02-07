@@ -54,15 +54,9 @@ class AddBookDialogFragment : DialogFragment() {
                 return@setOnClickListener
             }
 
-            val description = edit_text_name_desc.text.toString().trim()
-            if (description.isEmpty()) {
-                input_layout_name_desc.error = getString(R.string.error_description_required)
-                return@setOnClickListener
-            }
-
-            val owner = edit_text_name_owner.text.toString().trim()
-            if (owner.isEmpty()) {
-                input_layout_name_owner.error = getString(R.string.error_owner_required)
+            val data = edit_text_name_data.text.toString().trim()
+            if (data.isEmpty()) {
+                input_layout_name_data.error = getString(R.string.error_data_required)
                 return@setOnClickListener
             }
 
@@ -71,8 +65,7 @@ class AddBookDialogFragment : DialogFragment() {
             //'costruisco' l'oggetto libro
             book.name = name
             book.title = title
-            book.description = description
-            book.owner = owner
+            book.date = data
             viewModel.addBook(book)
         }
     }
