@@ -63,8 +63,8 @@ class AddBookDialogFragment : DialogFragment() {
 
             val book = Book()
             //'costruisco' l'oggetto libro
-            book.name = name
             book.title = title
+            book.name = name
             book.date = data
             viewModel.addBook(book)
         }
