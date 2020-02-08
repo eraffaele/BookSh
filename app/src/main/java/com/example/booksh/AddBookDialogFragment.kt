@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.add_book_dialog_fragment.*
 
 class AddBookDialogFragment : DialogFragment() {
     
-    private lateinit var viewModel: BooksViewModel
+    private lateinit var viewModel: BooksViewModel      //mi serve per accedere ad addBook
 
     override fun onCreateView(
         inflater: LayoutInflater,
