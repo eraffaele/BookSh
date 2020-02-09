@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">BookSh</string>
     <string name="book_added">Libro aggiunto!</string>
-    <string name="error_author_required">Inserire il nome dell autore del libro!</string>
-    <string name="error_title_required">Inserire il nome titolo del libro!</string>
+    <string name="book_edited">Libro modificato!</string>
+    <string name="error_author_required">Inserire l autore del libro!</string>
+    <string name="error_genere_required">Inserire il genere del libro!</string>
+    <string name="error_casaEd_required">Inserire la casa editrice!</string>
+    <string name="error_title_required">Inserire il titolo del libro!</string>
     <string name="error_data_required">Inserire la data in cui è stato letto il libro!</string>
-    <string name="error_db">Errore nell inserimento del libro nel database!</string>
+    <string name="error_db">Non è possibile salvare il libro nel database!</string>
+    <string name="error_edit_db">Non è possibile modifcare il libro!</string>
 </resources>

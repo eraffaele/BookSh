@@ -7,7 +7,9 @@ data class Book(
     var id: String? = null,
     var title: String? = null,
     var name: String? = null,
-    var date: String? = null
+    var date: String? = null,
+    var genere: String? = null,
+    var casaEd: String? = null
 ){
     //mi serve per evitare titoli duplicati
     override fun equals(other: Any?): Boolean {
@@ -21,6 +23,8 @@ data class Book(
         result = 31 * result + (title?.hashCode() ?: 0)
         result = 31 * result + (name?.hashCode() ?: 0)
         result = 31 * result + (date?.hashCode() ?: 0)
+        result = 31 * result + (genere?.hashCode() ?: 0)
+        result = 31 * result + (casaEd?.hashCode() ?: 0)
         return result
     }
 

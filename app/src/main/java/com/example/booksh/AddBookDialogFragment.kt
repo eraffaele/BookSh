@@ -60,12 +60,26 @@ class AddBookDialogFragment : DialogFragment() {
                 return@setOnClickListener
             }
 
+            val genere = edit_text_name_genere.text.toString().trim()
+            if (genere.isEmpty()) {
+                input_layout_name_genere.error = getString(R.string.error_genere_required)
+                return@setOnClickListener
+            }
+
+            val casaEd = edit_text_name_casaEd.text.toString().trim()
+            if (casaEd.isEmpty()) {
+                input_layout_name_casaEd.error = getString(R.string.error_casaEd_required)
+                return@setOnClickListener
+            }
+
 
             val book = Book()
             //'costruisco' l'oggetto libro
             book.title = title
             book.name = name
             book.date = data
+            book.genere = genere
+            book.casaEd = casaEd
             viewModel.addBook(book)
         }
     }

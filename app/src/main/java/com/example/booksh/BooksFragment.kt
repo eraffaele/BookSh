@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_book.*
 
-class BooksFragment : Fragment() {
+class BooksFragment : Fragment(), RecylerViewClickListener {
 
     private lateinit var viewModel: BooksViewModel      //mi serve per accedere a retrieveBook
     private val adapter = BooksAdapter()
@@ -25,6 +25,8 @@ class BooksFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        adapter.listener = this
 
         recycler_view_book.adapter = adapter        //setto l'adapter
 
@@ -47,6 +49,17 @@ class BooksFragment : Fragment() {
         button_add.setOnClickListener{
                     AddBookDialogFragment()
                         .show(childFragmentManager, "")
+        }
+    }
+
+    override fun onRecyclerViewClickListener(view: View, book: Book) {
+        when(view.id){
+            R.id.text_view_name -> {
+                BooksDetailsFragment(book).show(childFragmentManager, "")
+            }
+            R.id.button_edit_rv -> {
+                EditBookDialogFragment(book).show(childFragmentManager, "")
+            }
         }
     }
 }

@@ -40,7 +40,11 @@ class BooksViewModel : ViewModel() {
 
         override fun onChildMoved(snapshot: DataSnapshot, p1: String?) {}
 
-        override fun onChildChanged(snapshot: DataSnapshot, p1: String?) {}
+        override fun onChildChanged(snapshot: DataSnapshot, p1: String?) {
+            val book = snapshot.getValue(Book::class.java)
+            book?.id = snapshot.key
+            _book.value = book
+        }
 
         override fun onChildAdded(snapshot: DataSnapshot, p1: String?) {
             val book = snapshot.getValue(Book::class.java)
@@ -82,6 +86,18 @@ class BooksViewModel : ViewModel() {
 
 
         })
+
+    }
+
+    fun updateBook(book: Book){
+        dbBooks.child(book.id!!).setValue(book)
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    _result.value = null
+                } else {
+                    _result.value = it.exception
+                }
+            }
 
     }
 
