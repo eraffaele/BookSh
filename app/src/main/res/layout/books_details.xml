@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Autore libro: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView_auth"
+            android:textSize="17sp"
+            android:textStyle="italic"/>
+    <TextView
+            android:text="Mese in cui il libro è stato letto: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView2"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView_dt"
+            android:textSize="17sp"
+            android:textStyle="italic"/>
+    <TextView
+            android:text="Genere: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView3"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView_gen"
+            android:textSize="17sp"
+            android:textStyle="italic"/>
+    <TextView
+            android:text="Casa editrice: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView4"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView_casaEd"
+            android:textSize="17sp"
+            android:textStyle="italic"/>
+    <TextView
+            android:text="Voto: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/textView5"
+            android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingb"
+            android:max="5"
+            android:rating="5"
+            android:stepSize="1"/>
+
+
+</LinearLayout>
