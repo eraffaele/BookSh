@@ -20,6 +20,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -68,4 +69,8 @@ dependencies {
     //Android Navigation Architecture (aggiunto io)
     implementation "androidx.navigation:navigation-fragment-ktx:2.2.0-rc04"
     implementation "androidx.navigation:navigation-ui-ktx:2.2.0-rc04"
+
+    //aggiunto io per il grafico
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+    implementation 'com.android.support:multidex:1.0.3'
 }

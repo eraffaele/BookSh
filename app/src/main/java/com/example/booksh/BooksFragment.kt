@@ -50,6 +50,10 @@ class BooksFragment : Fragment(), RecylerViewClickListener {
                     AddBookDialogFragment()
                         .show(childFragmentManager, "")
         }
+
+        button_graph.setOnClickListener {
+            PieChartFragment().show(childFragmentManager, "")
+        }
     }
 
     override fun onRecyclerViewClickListener(view: View, book: Book) {

@@ -81,6 +81,8 @@ class BooksViewModel : ViewModel() {
 
                     }
                     _books.value = books                            //inserisco la lista in _books causa fun async
+
+
                 }
             }
 
