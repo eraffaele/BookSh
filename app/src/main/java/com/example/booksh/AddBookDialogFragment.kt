@@ -72,6 +72,11 @@ class AddBookDialogFragment : DialogFragment() {
                 return@setOnClickListener
             }
 
+            val numStar = ratingbar.rating.toInt()
+            if (numStar == 0) {
+                input_layout_name_rating.error = getString(R.string.error_star_required)
+                return@setOnClickListener
+            }
 
             val book = Book()
             //'costruisco' l'oggetto libro
@@ -80,6 +85,7 @@ class AddBookDialogFragment : DialogFragment() {
             book.date = data
             book.genere = genere
             book.casaEd = casaEd
+            book.voto = numStar
             viewModel.addBook(book)
         }
     }
