@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
@@ -45,16 +46,12 @@ class BooksFragment : Fragment(), RecylerViewClickListener {
         })
 
 
-        //cosa accade se clicco sul bottone in basso a dx
-        button_add.setOnClickListener{
-                    AddBookDialogFragment()
-                        .show(childFragmentManager, "")
-        }
 
-        button_graph.setOnClickListener {
-            PieChartFragment().show(childFragmentManager, "")
-        }
-    }
+
+}
+
+
+
 
     override fun onRecyclerViewClickListener(view: View, book: Book) {
         when(view.id){

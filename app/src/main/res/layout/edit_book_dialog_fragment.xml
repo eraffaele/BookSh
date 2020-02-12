@@ -73,7 +73,8 @@
                 android:id="@+id/edit_text_name_casaEd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Casa editrice" />
+                android:hint="Casa editrice"
+                android:textColorHint="@color/design_default_color_primary_dark"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +100,7 @@
             android:id="@+id/button_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/design_default_color_primary_dark"
             android:text="Modifica"
             android:textColor="@android:color/white" />
 
