@@ -31,6 +31,7 @@
                 android:id="@+id/edit_text_name_titolo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:hint="Titolo" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -73,8 +74,7 @@
                 android:id="@+id/edit_text_name_casaEd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Casa editrice"
-                android:textColorHint="@color/design_default_color_primary_dark"/>
+                android:hint="Casa editrice"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,6 +90,7 @@
                 android:id="@+id/ratingb"
                 android:max="5"
                 android:rating="5"
+                android:theme="@style/RatingBar"
                 android:stepSize="1"/>
 
 
@@ -100,7 +101,7 @@
             android:id="@+id/button_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/design_default_color_primary_dark"
+            android:background="@color/colorapp"
             android:text="Modifica"
             android:textColor="@android:color/white" />
 

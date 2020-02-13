@@ -17,10 +17,11 @@
                 android:layout_toStartOf="@id/layout_options"
                 android:fontFamily="sans-serif-light"
                 android:padding="18dp"
-                android:textColor="@color/design_default_color_primary_dark"
+                android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="20sp"
                 tools:text="Titolo libro"
                 android:textStyle="italic"
+
         />
 
         <LinearLayout
@@ -29,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+        >
 
             <ImageButton
                     android:id="@+id/button_edit_rv"
