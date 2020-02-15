@@ -26,7 +26,7 @@ class BooksViewModel : ViewModel() {
         book.id = dbBooks.push().key                    //con push genero la chiave (=id), con key posso recuperarla
         dbBooks.child(book.id!!).setValue(book)         //setto i valori
             .addOnCompleteListener {
-                if (it.isSuccessful) {      //controllo se il libro è stato salvato o meno (vedi AddBookDialogFragment)
+                if (it.isSuccessful) {
                     _result.value = null
                 } else {
                     _result.value = it.exception
@@ -35,7 +35,6 @@ class BooksViewModel : ViewModel() {
     }
 
     private val childEventListener = object : ChildEventListener {      //utile per RealTimeUpdates
-                                                                        //non lo sviluppo come in retrieveBook poichè voglio agg. realtime
         override fun onCancelled(error: DatabaseError) {}
 
         override fun onChildMoved(snapshot: DataSnapshot, p1: String?) {}
@@ -66,7 +65,6 @@ class BooksViewModel : ViewModel() {
 
     fun retrieveBook(){     //mi restituisce il titolo del libro
         dbBooks.addListenerForSingleValueEvent(object: ValueEventListener{
-            //le due funzioni sottostanti sono asincrone
             override fun onCancelled(error: DatabaseError) {}
 
             override fun onDataChange(snapshot: DataSnapshot) { //snapshot contiene tutto ciò che sta nel nodo libri
@@ -80,7 +78,7 @@ class BooksViewModel : ViewModel() {
                         book?.let { books.add(it) }                 //se book non è nullo lo aggiunto alla lista
 
                     }
-                    _books.value = books                            //inserisco la lista in _books causa fun async
+                    _books.value = books
 
 
                 }
@@ -103,9 +101,5 @@ class BooksViewModel : ViewModel() {
 
     }
 
-    override fun onCleared(){
-        super.onCleared()
-        dbBooks.removeEventListener(childEventListener)
-    }
 
 }

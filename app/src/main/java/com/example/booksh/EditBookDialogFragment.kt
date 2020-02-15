@@ -31,7 +31,7 @@ class EditBookDialogFragment(private val book: Book) : DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)     //istanza della classe, è diversa poichè estende la classe view Model
+        viewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)     //istanza
         return inflater.inflate(R.layout.edit_book_dialog_fragment, container, false)
     }
 
@@ -63,7 +63,7 @@ class EditBookDialogFragment(private val book: Book) : DialogFragment() {
         }) //fino a qua
 
         button_edit.setOnClickListener {
-            val name = edit_text_name_autore.text.toString().trim()     //metti il nome del libro nella variabile name
+            val name = edit_text_name_autore.text.toString().trim()
             if (name.isEmpty()) {       //se non inserisco il nome dell'autore ho errore
                 input_layout_name_autore.error = getString(R.string.error_author_required)
                 return@setOnClickListener

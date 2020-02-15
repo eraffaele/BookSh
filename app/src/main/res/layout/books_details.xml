@@ -24,7 +24,7 @@
             android:textSize="17sp"
             android:textStyle="italic"/>
     <TextView
-            android:text="Mese in cui il libro è stato letto: "
+            android:text="Mese in cui hai letto il libro: "
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/design_default_color_on_secondary"

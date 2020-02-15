@@ -18,7 +18,7 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookViewModel>() {       
 
     override fun getItemCount() = books.size
 
-    override fun onBindViewHolder(holder: BookViewModel, position: Int) {       //faccio sì che sarà visualizzato sul display solo il titolo del libro
+    override fun onBindViewHolder(holder: BookViewModel, position: Int) {
         holder.view.text_view_name.text = books[position].title
         holder.view.text_view_name.setOnClickListener {
             listener?.onRecyclerViewClickListener(it, books[position])

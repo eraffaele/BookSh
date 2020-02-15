@@ -19,7 +19,7 @@ class AddBookDialogFragment : DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)     //istanza della classe, è diversa poichè estende la classe view Model
+        viewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)     //istanza
         return inflater.inflate(R.layout.add_book_dialog_fragment, container, false)
     }
 
@@ -79,7 +79,6 @@ class AddBookDialogFragment : DialogFragment() {
             }
 
             val book = Book()
-            //'costruisco' l'oggetto libro
             book.title = title
             book.name = name
             book.date = data
