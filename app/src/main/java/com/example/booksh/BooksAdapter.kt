@@ -33,16 +33,7 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookViewModel>() {       
         notifyDataSetChanged()      //visualizzo sul display
     }
 
-    //utile per aggiornamenti realtime
-   // fun addBook(book: Book){
-     //   if(!books.contains(book)) {
-       //     books.add(book)
-        //} else {
-          // val index = books.indexOf(book)
-            //books[index] = book
-        //}
-        //notifyDataSetChanged()
-    //}
+ 
 
     class BookViewModel(val view: View) : RecyclerView.ViewHolder(view)
 }

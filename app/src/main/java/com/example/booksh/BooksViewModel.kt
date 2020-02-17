@@ -29,7 +29,7 @@ class BooksViewModel : ViewModel() {
                 }
             }
     }
-    
+
 
     fun retrieveBook(){     //mi restituisce il titolo del libro
         dbBooks.addValueEventListener(object: ValueEventListener{
