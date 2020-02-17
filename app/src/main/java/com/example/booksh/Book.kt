@@ -11,24 +11,4 @@ data class Book(
     var genere: String? = null,
     var casaEd: String? = null,
     var voto: Int? = null
-){
-    //mi serve per evitare titoli duplicati
-    override fun equals(other: Any?): Boolean {
-        return if(other is Book){   //other è un'istanza di Book
-            other.id == id          //il libro è già presente
-        }   else false
-    }
-
-    override fun hashCode(): Int {
-        var result = id?.hashCode() ?: 0
-        result = 31 * result + (title?.hashCode() ?: 0)
-        result = 31 * result + (name?.hashCode() ?: 0)
-        result = 31 * result + (date?.hashCode() ?: 0)
-        result = 31 * result + (genere?.hashCode() ?: 0)
-        result = 31 * result + (casaEd?.hashCode() ?: 0)
-        result = 31 * result + (voto?.hashCode() ?: 0)
-        return result
-    }
-
-
-}
+)

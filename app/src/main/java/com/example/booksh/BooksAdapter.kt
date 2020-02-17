@@ -34,15 +34,15 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookViewModel>() {       
     }
 
     //utile per aggiornamenti realtime
-    fun addBook(book: Book){
-        if(!books.contains(book)) {
-            books.add(book)
-        } else {
-           val index = books.indexOf(book)
-            books[index] = book
-        }
-        notifyDataSetChanged()
-    }
+   // fun addBook(book: Book){
+     //   if(!books.contains(book)) {
+       //     books.add(book)
+        //} else {
+          // val index = books.indexOf(book)
+            //books[index] = book
+        //}
+        //notifyDataSetChanged()
+    //}
 
     class BookViewModel(val view: View) : RecyclerView.ViewHolder(view)
 }

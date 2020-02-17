@@ -51,7 +51,7 @@ class EditBookDialogFragment(private val book: Book) : DialogFragment() {
         ratingb.rating = book.voto!!.toFloat()
 
 
-        //si pyò togliere
+
         viewModel.result.observe(viewLifecycleOwner, Observer {
             val message = if (it == null) {     //il libro è stato aggiunto nel db
                 getString(R.string.book_edited)
@@ -60,7 +60,7 @@ class EditBookDialogFragment(private val book: Book) : DialogFragment() {
             }
             Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()    //mostra l'errore o il messaggio di successo
             dismiss()
-        }) //fino a qua
+        })
 
         button_edit.setOnClickListener {
             val name = edit_text_name_autore.text.toString().trim()

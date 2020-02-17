@@ -32,7 +32,6 @@ class BooksFragment : Fragment(), RecylerViewClickListener {
         recycler_view_book.adapter = adapter        //setto l'adapter
 
         viewModel.retrieveBook()        //recupero dati
-        viewModel.RealTimeUpdates()
 
 
         //prendo books di tipo LiveData e lo inserisco nella lista che sarà visualizzata sul display
@@ -41,16 +40,8 @@ class BooksFragment : Fragment(), RecylerViewClickListener {
         })
 
 
-        viewModel.book.observe(viewLifecycleOwner, Observer {
-            adapter.addBook(it)
-        })
-
-
-
 
 }
-
-
 
 
     override fun onRecyclerViewClickListener(view: View, book: Book) {
